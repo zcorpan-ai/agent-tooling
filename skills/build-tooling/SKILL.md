@@ -68,13 +68,14 @@ For improving an existing skill or tool from a run's notes, follow `improve.md` 
 - Take auth from env or an existing CLI.
 - Start CI support as a `docs/ci.md` of open questions, not bot code.
 - Write skill text for any agent: "the agent", "a fresh agent", "this skill's directory". Give agent-specific paths, tools and commands as "under <agent>, …" next to a neutral default (XDG directories for config and state), and keep per-agent install steps in the README.
+- A skill whose output is picked up later or published (a repo, a report) records its own version there, found as in `improve.md` §Notes. For local changes, it says only "with local changes"; a diff, if kept, goes in a gitignored file.
 
 ## Self-improvement
 
 - Give every non-trivial skill an "Improving the skill" section of a few lines:
   - first, the opt-out: skip the section if `~/.config/skill-improvement/opt-out` (under `$XDG_CONFIG_HOME` if set) lists the skill (`improve.md` §Opt-out)
   - jot triggers specific to the skill
-  - a gitignored notes file
+  - a gitignored notes file, headed with the skill's version (`improve.md` §Notes)
   - mechanical draft-vs-final logging where it drafts output
   - when to offer a PR (a privacy gate if runs can be private)
 - End that section with: "To turn notes into a change, follow the `build-tooling` skill's `improve.md` if it's installed, else read https://raw.githubusercontent.com/zcorpan/agent-tooling/main/skills/build-tooling/improve.md and apply what's relevant." If the skill isn't installed, it may mention once that it's available; never require it.
