@@ -73,11 +73,11 @@ For improving an existing skill or tool from a run's notes, follow `improve.md` 
 ## Self-improvement
 
 - Give every non-trivial skill an "Improving the skill" section of a few lines:
-  - first, the opt-out: skip the section if `~/.config/skill-improvement/opt-out` (under `$XDG_CONFIG_HOME` if set) lists the skill (`improve.md` §Opt-out)
+  - first, the gate (`improve.md` §Opt-in and opt-out), on by default: skip the section if `~/.config/skill-improvement/opt-out` (under `$XDG_CONFIG_HOME` if set) lists the skill. Where the user wants it off by default, say so: unless `opt-in` lists the skill, skip the section except to ask once a session, when a note would first come up, whether to turn it on
   - jot triggers specific to the skill
   - a gitignored notes file, headed with the skill's version (`improve.md` §Notes)
   - mechanical draft-vs-final logging where it drafts output
-  - when to offer a PR (a privacy gate if runs can be private)
+  - when to offer a PR (a privacy gate if runs can be private), saying nothing when nothing meets the bar
 - End that section with: "To turn notes into a change, follow the `build-tooling` skill's `improve.md` if it's installed, else read https://raw.githubusercontent.com/zcorpan/agent-tooling/main/skills/build-tooling/improve.md and apply what's relevant." If the skill isn't installed, it may mention once that it's available; never require it.
 - When editing a skill that has no such section, offer to add one separately rather than adding it unasked, unless an open PR already adds one.
 
@@ -90,7 +90,7 @@ For improving an existing skill or tool from a run's notes, follow `improve.md` 
 
 ## Improving this skill
 
-- Skip this section if `~/.config/skill-improvement/opt-out` lists `build-tooling` (`improve.md` §Opt-out).
+- Skip this section if `~/.config/skill-improvement/opt-out` lists `build-tooling` (`improve.md` §Opt-in and opt-out).
 - Jot notes in `~/.local/state/skill-improvement/agent-tooling.md` (under `$XDG_STATE_HOME` if set) when one of these comes up:
   - a rule here led to a worse skill or tool, or was ignored because it was unclear
   - a problem found later (slow, token-heavy, churny, unsafe) that a missing rule would have prevented
