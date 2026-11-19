@@ -66,6 +66,7 @@ For improving an existing skill or tool from a run's notes, follow `improve.md` 
 - No hardcoded personal paths or logins. Local checkouts are optional, with a remote fallback.
 - Provide a setup/doctor check, and no interactive prompts in scripts.
 - Take auth from env or an existing CLI.
+- Give a new skill, plugin or tool repo a `LICENSE` (ask which license if the user hasn't said and the repo's other files don't show it) and, for a plugin, a matching `license` in `plugin.json`.
 - Start CI support as a `docs/ci.md` of open questions, not bot code.
 - Write skill text for any agent: "the agent", "a fresh agent", "this skill's directory". Give agent-specific paths, tools and commands as "under <agent>, …" next to a neutral default (XDG directories for config and state), and keep per-agent install steps in the README.
 - A skill whose output is picked up later or published as a repo or report (not comments posted for people) records its own version there. Copy `templates/skill_version.py` from this skill's directory into the skill's directory: it prints the line and saves local changes to `skill-local.diff`, which the output's repo gitignores. The skill says to follow the script's header comment by hand if it can't run. For local changes, the output says only "with local changes".
