@@ -3,6 +3,7 @@
   "name": "agent-tooling",
   "version": "0.11.0",
   "description": "Rules for building and improving Claude Code skills, plugins and the tools they drive",
+  "license": "MIT",
   "author": {
     "name": "Simon Pieters"
   }
