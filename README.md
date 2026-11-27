@@ -30,11 +30,11 @@ or alongside `web-platform-skills` and `httparchive`, from that marketplace:
 
 Auto-update is off by default for these marketplaces. To turn it on, open `/plugin`, go to Marketplaces, select the marketplace, and choose Enable auto-update.
 
-Or clone it and symlink it into your skills directory, where it loads as `agent-tooling@skills-dir`:
+To work on the skill, start Claude Code with the plugin from a clone. For that session, it replaces the installed plugin, and `/reload-plugins` picks up edits:
 
 ```
 git clone https://github.com/zcorpan-ai/agent-tooling ~/git/zcorpan-ai/agent-tooling
-ln -s ~/git/zcorpan-ai/agent-tooling ~/.claude/skills/agent-tooling
+claude --plugin-dir ~/git/zcorpan-ai/agent-tooling
 ```
 
 For Gemini CLI, link the skill from the clone (untested):
