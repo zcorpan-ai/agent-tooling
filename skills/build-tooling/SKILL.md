@@ -79,7 +79,7 @@ For improving an existing skill or tool from a run's notes, follow `improve.md` 
   - a gitignored notes file, headed with the skill's version (`improve.md` §Notes)
   - mechanical draft-vs-final logging where it drafts output
   - when to offer a PR (a privacy gate if runs can be private), saying nothing when nothing meets the bar
-- End that section with: "To turn notes into a change, follow the `build-tooling` skill's `improve.md` if it's installed, else read https://raw.githubusercontent.com/zcorpan/agent-tooling/main/skills/build-tooling/improve.md and apply what's relevant." If the skill isn't installed, it may mention once that it's available; never require it.
+- End that section with: "To turn notes into a change, follow the `build-tooling` skill's `improve.md` if it's installed, else read https://raw.githubusercontent.com/zcorpan-ai/agent-tooling/main/skills/build-tooling/improve.md and apply what's relevant." If the skill isn't installed, it may mention once that it's available; never require it.
 - When editing a skill that has no such section, offer to add one separately rather than adding it unasked, unless an open PR already adds one.
 
 ## Test and ship
@@ -96,4 +96,4 @@ For improving an existing skill or tool from a run's notes, follow `improve.md` 
   - a rule here led to a worse skill or tool, or was ignored because it was unclear
   - a problem found later (slow, token-heavy, churny, unsafe) that a missing rule would have prevented
   - the user rejected or rewrote an edit drafted under `improve.md`
-- Follow `improve.md` for these notes, with a higher bar: a change here affects every skill. Act only on guidance that proved wrong, or a pattern across different skills or tools. The target is `zcorpan/agent-tooling`.
+- Follow `improve.md` for these notes, with a higher bar: a change here affects every skill. Act only on guidance that proved wrong, or a pattern across different skills or tools. The target is `zcorpan-ai/agent-tooling`.
