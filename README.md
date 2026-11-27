@@ -10,21 +10,21 @@ An agent skill, `build-tooling`, also packaged as a Claude Code plugin, for crea
 
 [`improve.md`](skills/build-tooling/improve.md) holds the rules for turning a run's notes into a change. It's self-contained, so other skills' "Improving the skill" sections can point to its raw URL without requiring this plugin:
 
-https://raw.githubusercontent.com/zcorpan/agent-tooling/main/skills/build-tooling/improve.md
+https://raw.githubusercontent.com/zcorpan-ai/agent-tooling/main/skills/build-tooling/improve.md
 
 ## Install
 
 From Claude Code, either from this repo's marketplace:
 
 ```
-/plugin marketplace add zcorpan/agent-tooling
+/plugin marketplace add zcorpan-ai/agent-tooling
 /plugin install agent-tooling@agent-tooling
 ```
 
 or alongside `web-platform-skills` and `httparchive`, from that marketplace:
 
 ```
-/plugin marketplace add zcorpan/web-platform-skills
+/plugin marketplace add zcorpan-ai/web-platform-skills
 /plugin install agent-tooling@web-platform-skills
 ```
 
@@ -33,12 +33,12 @@ Auto-update is off by default for these marketplaces. To turn it on, open `/plug
 Or clone it and symlink it into your skills directory, where it loads as `agent-tooling@skills-dir`:
 
 ```
-git clone https://github.com/zcorpan/agent-tooling ~/git/zcorpan/agent-tooling
-ln -s ~/git/zcorpan/agent-tooling ~/.claude/skills/agent-tooling
+git clone https://github.com/zcorpan-ai/agent-tooling ~/git/zcorpan-ai/agent-tooling
+ln -s ~/git/zcorpan-ai/agent-tooling ~/.claude/skills/agent-tooling
 ```
 
 For Gemini CLI, link the skill from the clone (untested):
 
 ```
-gemini skills link ~/git/zcorpan/agent-tooling/skills/build-tooling
+gemini skills link ~/git/zcorpan-ai/agent-tooling/skills/build-tooling
 ```
